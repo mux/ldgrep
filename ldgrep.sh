@@ -26,7 +26,7 @@ add_lib_path()
 while getopts "EL:d:hp:" OPTION; do
 case "$OPTION" in
 	E) SED_OPTS="-E"
-       ;;
+	   ;;
 	L) add_lib_path "$OPTARG"
 	   ;;
 	d) PKGDB=$OPTARG
